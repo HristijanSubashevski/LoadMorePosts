@@ -1,0 +1,123 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.container .heading{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.container .box-container .box {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    display: none;
+}
+
+.container .box-container .box:nth-child(1),
+.container .box-container .box:nth-child(2),
+.container .box-container .box:nth-child(3){
+    display: inline-block;
+}
+
+.container .box-container .box .image {
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.container .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.container .box-container .box .content h3{
+    font-size: 20px;
+    color: black;
+}
+
+.container .box-container .box .content p{
+    font-size: 15px;
+    color: black;
+    line-height: 2;
+    padding: 15px 0;
+}
+
+.container .box-container .box .content .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid blue;
+    color: blue;
+    font-size: 16px;
+}
+
+.container .box-container .box .content .btn:hover {
+    background-color: crimson;
+    border-color: red;
+    color: antiquewhite;
+}
+
+.container .box-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid black;
+}
+
+.container .box-container .box .content .icons span{
+    color: black;
+    padding-right: 5px;
+
+}
+
+#load-more{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid blue;
+    color: blue;
+    font-size: 16px;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+#load-more:hover{
+    background-color: crimson;
+    border-color: red;
+    color: antiquewhite;
+}
